@@ -1,0 +1,30 @@
+{
+  "name": "bootstrap-npm-starter",
+  "version": "1.0.0",
+  "description": "Demo project for building a Bootstrap powered site via npm.",
+  "scripts": {
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
+    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer",
+    "css": "npm run css-compile && npm run css-prefix",
+    "server": "npx http-server -c-1 --port 3000",
+    "watch": "nodemon -e html,scss -x \"npm run css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": "mdo",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "http-server": "^0.12.1",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.3",
+    "postcss-cli": "^7.1.0"
+  }
+}
