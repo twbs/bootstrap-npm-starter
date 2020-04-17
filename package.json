@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Demo project for building a Bootstrap powered site via npm.",
   "scripts": {
+    "build": "npm run css",
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
     "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
     "css": "npm run css-compile && npm run css-prefix",
     "server": "serve --listen 3000",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run css"
   },
   "keywords": [
     "bootstrap",
