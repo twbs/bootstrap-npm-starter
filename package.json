@@ -11,7 +11,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "bootstrap"
+    "bootstrap",
+    "sass",
+    "css",
+    "javascript",
+    "starter",
+    "template"
   ],
   "author": "mdo",
   "license": "MIT",
