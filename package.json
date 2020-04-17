@@ -4,7 +4,7 @@
   "description": "Demo project for building a Bootstrap powered site via npm.",
   "scripts": {
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
-    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer",
+    "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
     "css": "npm run css-compile && npm run css-prefix",
     "server": "serve --listen 3000",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
