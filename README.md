@@ -30,7 +30,7 @@ npm run css-compile
 # Watch Sass for changes (uses nodemon)
 npm run watch
 
-# Start local server (uses http-server)
+# Start local server (uses serve)
 npm run server
 ```
 
