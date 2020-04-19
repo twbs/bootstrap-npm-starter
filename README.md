@@ -1,21 +1,23 @@
-# bootstrap-npm-starter
+# Bootstrap npm starter template
 
-Use this repo as a template for new Bootstrap-powered npm projects, or as your own Bootstrap prototyping sandbox.
+This repo is a template for creating new Bootstrap-powered npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox.
+
+Built with Bootstrap v4.4.1 with plans to update for v5.
 
 ## What's included
 
-- Single HTML page (`index.html`)
-- npm scripts for compiling and autoprefixing Sass, watching for changes, and starting a basic local server
-- Bootstrap source code via npm
-- Examples for importing all of Bootstrap's Sass, or only the parts you need
-- Examples for overriding default Sass variables and adding custom styles
-- Examples for importing Bootstrap's JS and dependencies wholesale, or only the modules you need
+- Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
+- Includes Bootstrap (currently using v4.4.1) source files via npm.
+- npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
+- Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
+- Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
 
 ## Usage
 
-Requires Node.js before proceeding.
+Be sure to have Node.js installed before proceeding.
 
 ```shell
+# Clone the repo
 git clone https://github.com/twbs/bootstrap-npm-starter
 cd bootstrap-npm-starter
 
@@ -38,4 +40,4 @@ Open <http://localhost:3000> to see the page in action.
 
 ## Copyright
 
-&copy; @mdo and licensed MIT.
+&copy; @mdo 2020 and licensed MIT.
