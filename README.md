@@ -76,6 +76,20 @@ See the `js/starter.js` file for an example of how to import all of Bootstrap's 
 
 You can add more options here, or import the entire `bootstrap-bundle.min.js` file, to get all JavaScript plugins and Popper.js.
 
+### PurgeCSS
+
+[PurgeCSS](https://purgecss.com/) is a [PostCSS](https://postcss.org) plugin that removes unused CSS based on your site's HTML. It finds rulesets that are unused by your HTML and removes them, ensuring only what's needed is sent to your site's visitors while improving file size and performance.
+
+We've included a single npm script that runs PurgeCSS against our single `index.html` file to remove unused styles from `assets/css/starter.css`.
+
+To purge your CSS, run `npm run css-purge` from the command line. This script (found in `package.json`) executes the following:
+
+```
+npx purgecss --css assets/css/starter.css --content index.html --output assets/css/
+```
+
+PurgeCSS is a PostCSS plugin and [can be configured](https://purgecss.com/configuration.html) to your exact needs with a little extra effort, including additional [command line options](https://purgecss.com/CLI.html).
+
 ## Actions CI
 
 We've included some simple GitHub Actions in this template repo. When you generate your new project from here, you'll have the same tests that run whenever a pull request is created. We've included Actions for the following:
