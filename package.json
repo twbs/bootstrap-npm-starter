@@ -2,6 +2,14 @@
   "name": "bootstrap-npm-starter",
   "version": "1.0.0",
   "description": "Demo project for building a Bootstrap powered site via npm.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twbs/bootstrap-npm-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twbs/bootstrap-npm-starter/issues"
+  },
+  "homepage": "https://github.com/twbs/bootstrap-npm-starter#readme",
   "scripts": {
     "build": "npm run css",
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
