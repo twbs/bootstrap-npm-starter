@@ -55,6 +55,7 @@ The following npm scripts are available to you in this starter repo. With the ex
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
 | `css-prefix` | Runs Autoprefixer on the compiled CSS |
+| `css-purge` | Runs PurgeCSS on the compiled CSS |
 
 ## Advanced usage
 
@@ -62,7 +63,7 @@ Take this starter repository to another level with some built-in addons that you
 
 ### Optimizing CSS
 
-Before you start to use tools that remove Bootstrap styling like PurgeCSS, you can make some broad optimizations by only including the stylesheets you think you'll need.
+Before you start to use tools that remove Bootstrap styling like [PurgeCSS](#purgecss), you can make some broad optimizations by only including the stylesheets you think you'll need.
 
 Look to the `scss/starter.scss` file for your two options of including all of Bootstrap, or a subset of our styles and components. By default we've only imported the stylesheets that Bootstrap requires plus those of the components we're planning to use.
 
