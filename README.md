@@ -55,7 +55,7 @@ The following npm scripts are available to you in this starter repo. With the ex
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
 | `css-prefix` | Runs Autoprefixer on the compiled CSS |
-| `css-purge` | Runs PurgeCSS on the compiled CSS |
+| `css-purge` | Runs PurgeCSS to remove CSS that is unused by `index.html` |
 
 ## Advanced usage
 
@@ -83,7 +83,7 @@ You can add more options here, or import the entire `bootstrap-bundle.min.js` fi
 
 We've included a single npm script that runs PurgeCSS against our single `index.html` file to remove unused styles from `assets/css/starter.css`.
 
-To purge your CSS, run `npm run css-purge` from the command line. This script (found in `package.json`) executes the following:
+To purge your CSS, run `npm run css-purge` from the command line. This executes the following:
 
 ```
 npx purgecss --css assets/css/starter.css --content index.html --output assets/css/
