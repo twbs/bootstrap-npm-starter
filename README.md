@@ -6,6 +6,10 @@ This repo is a template for creating new Bootstrap-powered npm projects, maintai
 
 Built with Bootstrap v4.4.1 with plans to update for v5.
 
+## Repo template
+
+Setup as a starter template, you can easily generate a new GitHub repository. From the repository homepage, click the `Use this template` button.
+
 ## What's included
 
 - Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
