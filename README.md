@@ -20,7 +20,7 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 
 ## Usage
 
-Be sure to have Node.js installed before proceeding.
+Be sure to have [Node.js](https://nodejs.org/en/download/) installed before proceeding.
 
 ```shell
 # Clone the repo
