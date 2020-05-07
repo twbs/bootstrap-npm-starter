@@ -20,7 +20,7 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 
 ## Usage
 
-Be sure to have [Node.js](https://nodejs.org/en/download/) installed before proceeding.
+Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
 
 ```shell
 # Clone the repo
@@ -85,8 +85,8 @@ We've included a single npm script that runs PurgeCSS against our single `index.
 
 To purge your CSS, run `npm run css-purge` from the command line. This executes the following:
 
-```
-npx purgecss --css assets/css/starter.css --content index.html --output assets/css/
+```shell
+npm purgecss --css assets/css/starter.css --content index.html --output assets/css/
 ```
 
 PurgeCSS is a PostCSS plugin and [can be configured](https://purgecss.com/configuration.html) to your exact needs with a little extra effort, including additional [command line options](https://purgecss.com/CLI.html).
