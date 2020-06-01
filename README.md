@@ -50,7 +50,7 @@ The following npm scripts are available to you in this starter repo. With the ex
 
 | Script | Description |
 | --- | --- |
-| `start` | Starts a local server (<http://localhost:3000>) for development |
+| `server` | Starts a local server (<http://localhost:3000>) for development |
 | `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
