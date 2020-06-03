@@ -4,7 +4,7 @@
 
 This repo is a template for creating new Bootstrap-powered npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox.
 
-Built with Bootstrap v4.4.1 with plans to update for v5.
+Built with Bootstrap v4.5.0 with plans to update for v5.
 
 ## Repo template
 
@@ -13,7 +13,7 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 ## What's included
 
 - Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
-- Includes Bootstrap (currently using v4.4.1) source files via npm.
+- Includes Bootstrap (currently using v4.5.0) source files via npm.
 - npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
 - Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
 - Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
@@ -50,7 +50,7 @@ The following npm scripts are available to you in this starter repo. With the ex
 
 | Script | Description |
 | --- | --- |
-| `start` | Starts a local server (<http://localhost:3000>) for development |
+| `server` | Starts a local server (<http://localhost:3000>) for development |
 | `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
