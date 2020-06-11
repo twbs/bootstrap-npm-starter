@@ -20,7 +20,7 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 
 ## Usage
 
-Be sure to have [Node.js](https://nodejs.org/en/download/) installed before proceeding.
+Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
 
 ```shell
 # Clone the repo
@@ -55,6 +55,7 @@ The following npm scripts are available to you in this starter repo. With the ex
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
 | `css-prefix` | Runs Autoprefixer on the compiled CSS |
+| `css-purge` | Runs PurgeCSS to remove CSS that is unused by `index.html` |
 
 ## Advanced usage
 
@@ -62,7 +63,7 @@ Take this starter repository to another level with some built-in addons that you
 
 ### Optimizing CSS
 
-Before you start to use tools that remove Bootstrap styling like PurgeCSS, you can make some broad optimizations by only including the stylesheets you think you'll need.
+Before you start to use tools that remove Bootstrap styling like [PurgeCSS](#purgecss), you can make some broad optimizations by only including the stylesheets you think you'll need.
 
 Look to the `scss/starter.scss` file for your two options of including all of Bootstrap, or a subset of our styles and components. By default we've only imported the stylesheets that Bootstrap requires plus those of the components we're planning to use.
 
@@ -75,6 +76,20 @@ Similar to optimizing CSS, we publish individual scripts for each of our plugins
 See the `js/starter.js` file for an example of how to import all of Bootstrap's JS or just the individual pieces. By default we've only imported our modal JavaScript since we have no need for anything else.
 
 You can add more options here, or import the entire `bootstrap-bundle.min.js` file, to get all JavaScript plugins and Popper.js.
+
+### PurgeCSS
+
+[PurgeCSS](https://purgecss.com/) is a [PostCSS](https://postcss.org) plugin that removes unused CSS based on your site's HTML. It finds rulesets that are unused by your HTML and removes them, ensuring only what's needed is sent to your site's visitors while improving file size and performance.
+
+We've included a single npm script that runs PurgeCSS against our single `index.html` file to remove unused styles from `assets/css/starter.css`.
+
+To purge your CSS, run `npm run css-purge` from the command line. This executes the following:
+
+```shell
+npm purgecss --css assets/css/starter.css --content index.html --output assets/css/
+```
+
+PurgeCSS is a PostCSS plugin and [can be configured](https://purgecss.com/configuration.html) to your exact needs with a little extra effort, including additional [command line options](https://purgecss.com/CLI.html).
 
 ## Actions CI
 
