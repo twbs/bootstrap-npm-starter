@@ -34,10 +34,9 @@
     "template"
   ],
   "dependencies": {
-    "bootstrap": "^4.5.3",
+    "bootstrap": "5.0.0-beta1",
     "bootstrap-icons": "^1.2.2",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "1.16.1-lts"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.0",

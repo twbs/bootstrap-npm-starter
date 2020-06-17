@@ -24,9 +24,11 @@
 //
 // Import just the styles you need. Note that some stylesheets are required no matter what.
 
-@import "bootstrap/scss/functions"; // Required
-@import "bootstrap/scss/variables"; // Required
-@import "bootstrap/scss/mixins"; // Required
+// Configuration
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
 
 //
 // Override Bootstrap here
@@ -41,11 +43,12 @@ $body-color: $purple;
 $body-bg: #f5f5f5;
 $border-radius: .4rem;
 
-// @import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot"; // Required
+// Layout & components
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
 // @import "bootstrap/scss/images";
-// @import "bootstrap/scss/code";
+@import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
@@ -53,29 +56,28 @@ $border-radius: .4rem;
 @import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/input-group"; // Requires forms
-// @import "bootstrap/scss/custom-forms";
 // @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
+// @import "bootstrap/scss/navbar";
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/jumbotron";
 // @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/media";
 // @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+@import "bootstrap/scss/modal";
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/utilities";
-// @import "bootstrap/scss/print";
 
+// // Helpers
+// @import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
 
 //
 // Custom styles
