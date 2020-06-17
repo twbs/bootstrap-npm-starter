@@ -63,8 +63,9 @@ The following npm scripts are available to you in this starter repo. With the ex
 | `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
-| `css-prefix` | Runs Autoprefixer on the compiled CSS |
-| `css-purge` | Runs PurgeCSS to remove CSS that is unused by `index.html` |
+| `css-lint` | Runs [Stylelint](https://stylelint.io) against source Sass for code quality |
+| `css-prefix` | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS |
+| `css-purge` | Runs [PurgeCSS](https://purgecss.com) to remove CSS that is unused by `index.html` |
 
 ## Advanced usage
 
