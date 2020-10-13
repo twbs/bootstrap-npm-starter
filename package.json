@@ -31,16 +31,17 @@
   "author": "mdo",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
-    "popper.js": "1.16.1-lts"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
+    "autoprefixer": "^10.0.1",
     "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
-    "postcss-cli": "^7.1.1",
-    "purgecss": "^2.1.2",
-    "serve": "^11.3.0"
+    "nodemon": "^2.0.5",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.1.0",
+    "purgecss": "^3.0.0",
+    "serve": "^11.3.2"
   }
 }
