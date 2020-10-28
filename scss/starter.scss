@@ -21,6 +21,7 @@ $enable-shadows: true;
 // Customize some defaults
 $body-color: purple;
 $body-bg: #f5f5f5;
+$border-radius: .4rem;
 
 
 //
@@ -72,7 +73,7 @@ $body-bg: #f5f5f5;
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
-// @import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
 
 
@@ -83,4 +84,9 @@ $body-bg: #f5f5f5;
 
 body {
   padding: 3rem;
+}
+
+// Style Bootstrap icons
+.bi {
+  fill: currentColor;
 }
