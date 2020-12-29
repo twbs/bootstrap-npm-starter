@@ -19,7 +19,7 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 ## What's included
 
 - Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
-- Includes Bootstrap (currently using v4.5.0) source files via npm.
+- Includes Bootstrap (currently using v4.5.3) source files via npm.
 - npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
 - Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
 - Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
