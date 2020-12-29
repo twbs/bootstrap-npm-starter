@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/98681/84929378-99291700-b084-11ea-89db-8b5ad75d9258.png" width="300" height="175" alt="Bootstrap npm logo">
+  <img src=".github/logo.png" width="300" height="175" alt="Bootstrap npm logo">
 </p>
 
 <h3 align="center">Bootstrap npm starter template</h3>
