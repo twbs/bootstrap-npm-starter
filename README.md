@@ -112,4 +112,4 @@ When your repository is generated, you won't see anything in the Actions tab unt
 
 ## Copyright
 
-&copy; @mdo 2020 and licensed MIT.
+&copy; @mdo 2020-2021 and licensed MIT.
