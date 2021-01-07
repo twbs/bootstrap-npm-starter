@@ -11,20 +11,6 @@
 
 
 //
-// Override Bootstrap here
-//
-
-// Toggle global options
-$enable-gradients: true;
-$enable-shadows: true;
-
-// Customize some defaults
-$body-color: purple;
-$body-bg: #f5f5f5;
-$border-radius: .4rem;
-
-
-//
 // Bring in Bootstrap
 //
 
@@ -41,6 +27,20 @@ $border-radius: .4rem;
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
+
+//
+// Override Bootstrap here
+//
+
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+// Customize some defaults
+$body-color: $purple;
+$body-bg: #f5f5f5;
+$border-radius: .4rem;
+
 // @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot"; // Required
 @import "bootstrap/scss/type";
@@ -75,7 +75,6 @@ $border-radius: .4rem;
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
-
 
 
 //
