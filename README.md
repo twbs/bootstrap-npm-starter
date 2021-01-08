@@ -55,7 +55,7 @@ Open <http://localhost:3000> to see the page in action.
 
 ## Scripts
 
-The following npm scripts are available to you in this starter repo. With the exception of `npm start`, the remaining scripts can be run from your command line with `npm run scriptName`.
+The following npm scripts are available to you in this starter repo. With the exception of `npm start` and `npm test`, the remaining scripts can be run from your command line with `npm run scriptName`.
 
 | Script | Description |
 | --- | --- |
