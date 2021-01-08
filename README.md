@@ -55,7 +55,7 @@ Open <http://localhost:3000> to see the page in action.
 
 ## Scripts
 
-The following npm scripts are available to you in this starter repo. With the exception of `npm start`, the remaining scripts can be run from your command line with `npm run scriptName`.
+The following npm scripts are available to you in this starter repo. With the exception of `npm start` and `npm test`, the remaining scripts can be run from your command line with `npm run scriptName`.
 
 | Script | Description |
 | --- | --- |
@@ -63,8 +63,10 @@ The following npm scripts are available to you in this starter repo. With the ex
 | `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
-| `css-prefix` | Runs Autoprefixer on the compiled CSS |
-| `css-purge` | Runs PurgeCSS to remove CSS that is unused by `index.html` |
+| `css-lint` | Runs [Stylelint](https://stylelint.io) against source Sass for code quality |
+| `css-prefix` | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS |
+| `css-purge` | Runs [PurgeCSS](https://purgecss.com) to remove CSS that is unused by `index.html` |
+| `test` | Runs `css-lint` and `css`, in sequential order |
 
 ## Advanced usage
 
@@ -109,6 +111,12 @@ We've included some simple GitHub Actions in this template repo. When you genera
 When your repository is generated, you won't see anything in the Actions tab until you create a new pull request. You can customize these Actions, add new ones, or remove them outright if you wish.
 
 [Learn more about GitHub Actions](https://github.com/features/actions), [read the Actions docs](https://help.github.com/en/actions), or [browse the Actions Marketplace](https://github.com/marketplace/actions).
+
+### Stylelint
+
+Stylelint is included, as is Bootstrap's default Stylelint config, [stylelint-config-twbs-bootstrap](https://github.com/twbs/stylelint-config-twbs-bootstrap). This is the same linter configuration we use in the main Bootstrap project. It's run via the `npm test` command, which is invoked in our `ci.yml` Actions workflow file.
+
+At the root of the repo, `.stylelintignore` is used to list files that we ignore when linting and `.stylelintrc` is where we tell Stylelint to use the Bootstrap config. The former is recommended based on your specific needs, while the latter is required.
 
 ## Copyright
 
