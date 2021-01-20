@@ -43,7 +43,7 @@ npm run css-compile
 # Watch Sass for changes (uses nodemon)
 npm run watch
 
-# Start local server (uses serve)
+# Start local server (uses sirv-cli)
 npm run server
 
 # Watches Sass for changes and starts a local server
