@@ -18,7 +18,7 @@
     "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
-    "css-purge": "purgecss --css assets/css/starter.css --content index.html --output assets/css/",
+    "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
     "css": "npm-run-all css-compile css-prefix",
     "server": "sirv --port 3000",
     "start": "npm-run-all --parallel watch server",
