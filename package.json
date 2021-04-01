@@ -20,7 +20,7 @@
     "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
     "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
     "css": "npm-run-all css-compile css-prefix",
-    "server": "sirv --port 3000",
+    "server": "serve --listen 3000",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
     "test": "npm run css-lint && npm run css"
@@ -47,7 +47,7 @@
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1",
     "purgecss": "^4.0.2",
-    "sirv-cli": "^1.0.11",
+    "serve": "^11.3.2",
     "stylelint": "^13.12.0",
     "stylelint-config-twbs-bootstrap": "^2.1.0"
   }
