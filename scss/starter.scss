@@ -22,26 +22,23 @@
 
 // Option 2
 //
-// Import just the styles you need. Note that some stylesheets are required no matter what.
-
-@import "bootstrap/scss/functions"; // Required
-@import "bootstrap/scss/variables"; // Required
-@import "bootstrap/scss/mixins"; // Required
-
-//
-// Override Bootstrap here
-//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
 // Toggle global options
 $enable-gradients: true;
 $enable-shadows: true;
 
 // Customize some defaults
-$body-color: $purple;
-$body-bg: #f5f5f5;
+$body-color: #333;
+$body-bg: #fff;
 $border-radius: .4rem;
+$success: #7952b3;
 
-// @import "bootstrap/scss/root";
+@import "bootstrap/scss/functions"; // Required
+@import "bootstrap/scss/variables"; // Required
+@import "bootstrap/scss/mixins"; // Required
+
+@import "bootstrap/scss/root"; // Required
 @import "bootstrap/scss/reboot"; // Required
 @import "bootstrap/scss/type";
 // @import "bootstrap/scss/images";
@@ -80,6 +77,8 @@ $border-radius: .4rem;
 //
 // Custom styles
 //
+
+@import "icon-list";
 
 body {
   padding: 3rem 1.5rem;
