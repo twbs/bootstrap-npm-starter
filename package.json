@@ -15,7 +15,7 @@
   "homepage": "https://github.com/twbs/bootstrap-npm-starter#readme",
   "scripts": {
     "build": "npm run css",
-    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules scss/:assets/css/",
+    "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:assets/css/",
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
     "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
