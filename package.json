@@ -18,7 +18,7 @@
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:assets/css/",
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
-    "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html \"node_modules/bootstrap/js/dist/{util,modal}.js\" --output assets/css/",
+    "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html \"node_modules/bootstrap/js/dist/dom/*.js\" \"node_modules/bootstrap/js/dist/{base-component,dropdown,modal,offcanvas}.js\" --output assets/css/",
     "css": "npm-run-all css-compile css-prefix",
     "server": "serve --listen 3000",
     "start": "npm-run-all --parallel watch server",
