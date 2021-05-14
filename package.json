@@ -23,7 +23,7 @@
     "server": "serve --listen 3000",
     "start": "npm-run-all --parallel watch server",
     "watch": "nodemon -e html,scss -x \"npm run css\"",
-    "test": "npm run css-lint && npm run css"
+    "test": "npm-run-all css-lint css"
   },
   "keywords": [
     "bootstrap",
