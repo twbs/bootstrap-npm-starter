@@ -1,0 +1,12 @@
+terminal 1 (watch sass)
+
+cd Documents\Portfolio
+npm run watch
+
+terminal 2 (start local server)
+cd Documents\Portfolio
+npm run server
+http://localhost:3000/
+
+
+or npm start (starts sass and starts local server)
