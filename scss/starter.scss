@@ -72,6 +72,7 @@ $success: #7952b3;
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas"; // Requires transitions
+// @import "bootstrap/scss/placeholders";
 
 // Helpers
 // @import "helpers";
@@ -87,7 +88,7 @@ $success: #7952b3;
 @import "icon-list";
 
 body {
-  padding: 3rem 1.5rem;
+  padding: 1.5rem;
 }
 
 // Style Bootstrap icons
