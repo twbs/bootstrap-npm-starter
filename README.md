@@ -8,7 +8,7 @@
 
 ## About
 
-The **Bootstrap npm starter** is a GitHub template repository for quickly creating new [Bootstrap](https://getbootstrap.com)-powered npm projects. Click `Use this template` above, or clone/download it as your own Bootstrap prototyping sandbox.
+The **Bootstrap npm starter + Vite** is a GitHub template repository for quickly creating new [Bootstrap](https://getbootstrap.com)-powered npm projects. Click `Use this template` above, or clone/download it as your own Bootstrap prototyping sandbox.
 
 Includes support for importing Bootstrap via `node_modules`, adding your own customizations, and compiling CSS and JS for production. It also includes more advanced features for streamlinoing compiled code with Purge CSS and linting CSS with GitHub Actions.
 
@@ -21,7 +21,7 @@ Includes support for importing Bootstrap via `node_modules`, adding your own cus
 - Includes [Bootstrap Icons](https://icons.getbootstrap.com) (v1.5.0), which includes over 1,300 icons available as SVGs and web fonts.
 - npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
 - Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
-- Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
+- Example JavaScript file (`main.js`) showing how to import all of Bootstrap, or just the parts you need.
 
 ## Usage
 
@@ -35,20 +35,20 @@ cd bootstrap-npm-starter
 # Install dependencies
 npm i
 
-# Compile Sass
-npm run css-compile
+# Start the dev server (uses vite)
+# First run has a small delay as a cache is built. Any changes to files are hot reloaded.
+npm run dev
 
-# Watch Sass for changes (uses nodemon)
-npm run watch
+# Build release (uses vite)
+npm run build
 
-# Start local server (uses sirv-cli)
+# Start local server (uses vite)
 npm run server
 
-# Watches Sass for changes and starts a local server
-npm start
 ```
 
-For the most straightforward development, open two Terminal tabs to execute `npm run server` and `npm run watch` at the same time.
+For the most straightforward development, open a Terminal tabs to execute `npm run dev` or `vite`.
+The browser will update will changes to index.html, main.js or starter.scss
 
 Open <http://localhost:3000> to see the page in action.
 
@@ -70,6 +70,8 @@ The following npm scripts are available to you in this starter repo. With the ex
 ## Advanced usage
 
 Take this starter repository to another level with some built-in addons that you can enable and customize.
+
+## Vite uses rollup under the hood and tree-shaking for the js... what follows may not be relevant!
 
 ### Optimizing CSS
 

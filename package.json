@@ -14,7 +14,10 @@
   },
   "homepage": "https://github.com/twbs/bootstrap-npm-starter#readme",
   "scripts": {
-    "build": "npm run css",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "css-build": "npm run css",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules scss/:assets/css/",
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
@@ -27,6 +30,7 @@
   },
   "keywords": [
     "bootstrap",
+    "vite",
     "sass",
     "css",
     "javascript",
@@ -48,6 +52,7 @@
     "sass": "^1.38.2",
     "serve": "^12.0.0",
     "stylelint": "^13.13.1",
-    "stylelint-config-twbs-bootstrap": "^2.2.3"
+    "stylelint-config-twbs-bootstrap": "^2.2.3",
+    "vite": "^2.5.2"
   }
 }
