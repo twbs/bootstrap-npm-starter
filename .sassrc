@@ -1,0 +1,4 @@
+{
+  "includePaths": ["node_modules", "scss"],
+  outputStyle: "compressed",
+}

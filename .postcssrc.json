@@ -1,0 +1,12 @@
+{
+  "modules": false,
+  "plugins": {
+    "@fullhuman/postcss-purgecss": {
+      "content": ["./**/*.html"]
+    },
+    "autoprefixer": true,
+    "postcss-import": true,
+    "postcss-url": true,
+    "postcss-custom-properties": true
+  }
+}
