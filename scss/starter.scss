@@ -24,6 +24,9 @@
 //
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
+// Required : Variable overrides must come after our functions are imported, but before the rest of the imports.
+@import "bootstrap/scss/functions";
+
 // Toggle global options
 $enable-gradients: true;
 $enable-shadows: true;
@@ -36,8 +39,10 @@ $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
 
+// Or add variables from your own "_variables.scss"
+// @import "variables"
+
 // Required
-@import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
