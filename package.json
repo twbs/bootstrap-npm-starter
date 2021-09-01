@@ -16,7 +16,7 @@
   "scripts": {
     "build": "parcel build --public-url ./ ./src/index.html --dist-dir build",
     "css-lint": "stylelint \"**/*.scss\"",
-    "prebuild": "rm -rf build",
+    "prebuild": "rimraf build",
     "start": "parcel serve ./src/index.html",
     "test": "npm-run-all css-lint"
   },
@@ -44,6 +44,7 @@
     "postcss-custom-properties": "^11.0.0",
     "postcss-import": "^14.0.2",
     "postcss-url": "^10.1.3",
+    "rimraf": "^3.0.2",
     "sass": "^1.38.2",
     "stylelint": "^13.13.1",
     "stylelint-config-twbs-bootstrap": "^2.2.3"
