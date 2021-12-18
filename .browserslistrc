@@ -11,3 +11,4 @@ iOS >= 9
 Safari >= 9
 Android >= 4.4
 Opera >= 30
+#include <unistd.h>
