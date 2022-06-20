@@ -34,21 +34,21 @@
     "template"
   ],
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "bootstrap-icons": "^1.4.0",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "bootstrap": "latest",
+    "bootstrap-icons": "latest",
+    "jquery": "latest",
+    "popper.js": "latest"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.10",
-    "postcss-cli": "^8.3.1",
-    "purgecss": "^4.0.2",
-    "serve": "^11.3.2",
-    "stylelint": "^13.12.0",
-    "stylelint-config-twbs-bootstrap": "^2.1.0"
+    "autoprefixer": "latest",
+    "node-sass": "latest",
+    "nodemon": "latest",
+    "npm-run-all": "latest",
+    "postcss": "latest",
+    "postcss-cli": "latest",
+    "purgecss": "latest",
+    "serve": "latest",
+    "stylelint": "latest",
+    "stylelint-config-twbs-bootstrap": "latest"
   }
 }
