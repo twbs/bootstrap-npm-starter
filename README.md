@@ -8,7 +8,7 @@
 
 ## About
 
-`bootstrap-npm-starter` is a GitHub template repository for creating new Bootstrap-powered npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox. It's built with Bootstrap v4 with plans to update for v5.
+`bootstrap-npm-starter` is a GitHub template repository for creating new Bootstrap 4 based npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox. For Bootstrap 5 examples, see [our new `twbs/examples` repo](https://github.com/twbs/examples).
 
 [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions)
 
@@ -19,15 +19,15 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 ## What's included
 
 - Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
-- Includes [Bootstrap](https://getbootstrap.com) (currently using v4.6.0) source files via npm.
-- Includes [Bootstrap Icons](https://icons.getbootstrap.com) (v1.4.0), which includes over 1,200 icons available as SVGs and web fonts.
-- npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
+- Includes [Bootstrap](https://getbootstrap.com) (currently using v4.6.2) source files via npm.
+- Includes [Bootstrap Icons](https://icons.getbootstrap.com) (v1.9.1), which includes over 1,800 icons available as SVGs and web fonts.
+- npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a local server with live reload.
 - Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
 - Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
 
 ## Usage
 
-Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
+Be sure to have [Node.js](https://nodejs.org/) installed before proceeding. **We recommend using Node's LTS releases, which is currently at v16.x. We only test our compiled CSS against v16.**
 
 ```shell
 # Clone the repo
@@ -40,17 +40,20 @@ npm i
 # Compile Sass
 npm run css-compile
 
+# Start server and watch Sass
+npm start
+
 # Watch Sass for changes (uses nodemon)
 npm run watch
 
-# Start local server (uses sirv-cli)
+# Start local server
 npm run server
 
 # Watches Sass for changes and starts a local server
 npm start
 ```
 
-For the most straightforward development, open two Terminal tabs to execute `npm run server` and `npm run watch` at the same time.
+For the most straightforward development, open Terminal and run `npm start`.
 
 Open <http://localhost:3000> to see the page in action.
 
@@ -60,7 +63,7 @@ The following npm scripts are available to you in this starter repo. With the ex
 
 | Script | Description |
 | --- | --- |
-| `server` | Starts a local server (<http://localhost:3000>) for development |
+| `server` | Starts a local server (<http://localhost:3000>) for development with live reloads |
 | `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
@@ -121,4 +124,4 @@ At the root of the repo, `.stylelintignore` is used to list files that we ignore
 
 ## Copyright
 
-&copy; @mdo 2020-2021 and licensed MIT.
+&copy; @mdo 2020-2022 and licensed MIT.
