@@ -27,7 +27,7 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 
 ## Usage
 
-Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
+Be sure to have [Node.js](https://nodejs.org/) installed before proceeding. **We recommend using Node's LTS releases, which is currently at v16.x. We only test our compiled CSS against v16.**
 
 ```shell
 # Clone the repo
