@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-npm-starter",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "private": true,
   "description": "Demo project for building a Bootstrap powered site via npm.",
   "author": "mdo",
