@@ -8,7 +8,7 @@
 
 ## About
 
-`bootstrap-npm-starter` is a GitHub template repository for creating new Bootstrap-powered npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox. It's built with Bootstrap v4 with plans to update for v5.
+`bootstrap-npm-starter` is a GitHub template repository for creating new Bootstrap 4 based npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox. For Bootstrap 5 examples, see [our new `twbs/examples` repo](https://github.com/twbs/examples).
 
 [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions)
 
