@@ -21,7 +21,7 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 - Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
 - Includes [Bootstrap](https://getbootstrap.com) (currently using v4.6.2) source files via npm.
 - Includes [Bootstrap Icons](https://icons.getbootstrap.com) (v1.9.1), which includes over 1,800 icons available as SVGs and web fonts.
-- npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
+- npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a local server with live reload.
 - Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
 - Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
 
@@ -40,17 +40,20 @@ npm i
 # Compile Sass
 npm run css-compile
 
+# Start server and watch Sass
+npm start
+
 # Watch Sass for changes (uses nodemon)
 npm run watch
 
-# Start local server (uses sirv-cli)
+# Start local server
 npm run server
 
 # Watches Sass for changes and starts a local server
 npm start
 ```
 
-For the most straightforward development, open two Terminal tabs to execute `npm run server` and `npm run watch` at the same time.
+For the most straightforward development, open Terminal and run `npm start`.
 
 Open <http://localhost:3000> to see the page in action.
 
@@ -60,7 +63,7 @@ The following npm scripts are available to you in this starter repo. With the ex
 
 | Script | Description |
 | --- | --- |
-| `server` | Starts a local server (<http://localhost:3000>) for development |
+| `server` | Starts a local server (<http://localhost:3000>) for development with live reloads |
 | `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
 | `css` | Runs `css-compile` and `css-prefix` |
 | `css-compile` | Compiles source Sass into CSS |
