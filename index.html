@@ -1,87 +1,410 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/starter.css">
-    <title>Bootstrap npm starter</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Inagara Karya Mandiri</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
   </head>
-  <body>
-    <div class="col-md-8 py-5 px-3 mx-auto">
-
-      <header class="pb-3 mb-5 border-bottom">
-        <h1 class="h4">
-          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-inline-block mr-2" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-            <span>npm starter</span>
-          </a>
-        </h1>
-      </header>
-
-      <h1>Get started with Bootstrap</h1>
-      <div class="col-lg-8 px-0">
-        <p class="lead">You've successfully loaded up the Bootstrap npm starter project! It's loaded up with <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4</a>, <a href="https://icons.getbootstrap.com">Bootstrap Icons</a>, and tooling for compiling our Sass and JavaScript to your needs.</p>
-        <p>If this button appears blue and the link appears purple, you've done it!</p>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">INAGARA</a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partners">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactus">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <button type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#exampleModal">Toggle example modal</button>
-      <a href="#" class="text-success">Example link</a>
-
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div
+        class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center"
+      >
+        <div class="d-flex justify-content-center">
+          <div class="text-center">
+            <h1 class="mx-auto my-0 text-uppercase">Mobile Developer</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">
+              We build an responsive Website and Mobile Application
+              (iOS/Android).
+            </h2>
+            <a class="btn btn-primary" href="#about">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About-->
+    <section class="about-section text-center" id="about">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-white mb-4">Mobile Application</h2>
+            <p class="text-white-50">
+              With the growing number of people accessing the Internet via
+              smartphones and tablets, mobile app development has the unique
+              ability to access a large number of potential consumers. Mobile
+              applications are pivoting business errands now and henceforward.
+              People are flocking apps for all fronts. Technology has brought
+              revolutionization in the way we business and businesses serve us.
+              For a conventional world, technology is being a juggernaut that
+              swapped the world’s behavior – surely in a positive way. Millions
+              of business exercises are done right from the fingertips and that
+              too reliably.
+            </p>
+          </div>
+        </div>
+        <img class="img-fluid" src="assets/img/ipad.png" alt="..." />
+      </div>
+    </section>
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="services">
+      <div class="container px-4 px-lg-5">
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+          <div class="col-xl-8 col-lg-7">
+            <img
+              class="img-fluid mb-3 mb-lg-0"
+              src="assets/img/bg-head1.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Our Services</h4>
+              <p class="text-black-50 mb-0">
+                The main focus is on digital transformation by exploring the
+                emphasis on end-to-end solutions so that it can help you
+                transform towards digital in a more agile and committed way to
+                help your business become better and be able to compete in
+                today's technology era.
+              </p>
             </div>
-            <div class="modal-body">
-              If you're seeing this modal after clicking the button on the page, Bootstrap's CSS and JS are both working properly.
+          </div>
+        </div>
+        <!-- Project One Row-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="projects">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/demo-image-01.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-left"
+                >
+                  <h4 class="text-white">Mobile Application</h4>
+                  <p class="mb-0 text-white-50">
+                    Mobile app development services are aimed at building iOS & Android applications that effectively complement or substitute web solutions. Having delivered 1  0+ mobile app development projects so far, we ensures app success by delivering striking UI, secure app code, and resilient back ends.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ms-0" />
+                </div>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+        <!-- Project Two Row-->
+        <div class="row gx-0 justify-content-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/demo-image-02.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-right"
+                >
+                  <h4 class="text-white">Infrastructure</h4>
+                  <p class="mb-0 text-white-50">
+                    Infrastructure includes networking equipment and servers due to the important function they provide within specific business environments. If businesses do not have IT infrastructure, businesses struggle to share and move data in an efficient way within the workplace. And when IT infrastructure fails, many business functions are not able to be performed.<br><br>Infrastructure services include communication services, networking, data processing and storage, platforms through which businesses can share content and media, knowledge management, systems, applications, IoT, user devices, resilience. Most importantly, infrastructure services provide a help desk to support end users with a Service Level Agreement (SLA) that guarantees a level of service.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 me-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Three Row-->
+        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/demo-image-03.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-left"
+                >
+                  <h4 class="text-white">Consultation</h4>
+                  <p class="mb-0 text-white-50">
+                    We help organizations develop a digital product strategy that realizes business strategy. To do this, we leverage an array of capabilities—in human-centered design, product engineering, product management, AI and analytics, cybersecurity, and agile ways of working. But we aren’t just designers and builders. We’re enablers. This is a crucial component of our approach: embedding the processes, roles, and technology that let clients own—and continually improve—their digital products.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 ms-0" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Fourth Row-->
+        <div class="row gx-0 justify-content-center">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/demo-image-04.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div
+                  class="project-text w-100 my-auto text-center text-lg-right"
+                >
+                  <h4 class="text-white">Website</h4>
+                  <p class="mb-0 text-white-50">
+                    Custom website development is a service inseparable from the client-agency partnership, although the result deployed – the website – is an actual product. The focus should be in the service process and the customer’s perception of it.
+                  </p>
+                  <hr class="d-none d-lg-block mb-0 me-0" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-      <hr class="my-5 w-25 mx-0">
-
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Adding Bootstrap Icons</h2>
-          <p><a href="https://icons.getbootstrap.com">Bootstrap Icons</a> are included with the SVG sprite here, but there are other <a href="https://icons.getbootstrap.com/#usage">usage options</a>, too. They're styleable with text utilities and more.</p>
-
-          <svg class="bi text-danger" width="32" height="32">
-            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#heart-fill"/>
-          </svg>
-          <svg class="bi text-dark" width="32" height="32">
-            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#toggles"/>
-          </svg>
-          <svg class="bi text-primary" width="32" height="32">
-            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#shop"/>
-          </svg>
-        </div>
-
-        <div class="col-md-6">
-          <h2>Guides</h2>
-          <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-          <ul class="icon-list">
-            <li><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction">Bootstrap quick start guide</a></li>
-            <li><a href="https://getbootstrap.com/docs/4.6/getting-started/webpack">Bootstrap Webpack guide</a></li>
-            <li><a href="https://getbootstrap.com/docs/4.6/getting-started/build-tools">Contributing to Bootstrap</a></li>
-          </ul>
+    </section>
+    <!-- Partner-->
+    <section class="projects-section bg-light" id="partners">
+      <div class="container px-4 px-lg-5">
+        <!-- Featured Project Row-->
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Our Partner</h4>
+              <p class="text-black-50 mb-0">
+                Experts in developing, delivering and positioning low-code projects, our partners have one goal are customer success.<br><br>With industry expertise and exclusive access to the tools and resources required to help you achieve business results, Inagara Partners help fuel your innovation.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+            <img
+              class="img-fluid mb-3 mb-lg-0"
+              src="assets/img/bg-head1.jpg"
+              alt="..."
+            />
+          </div>
         </div>
       </div>
-
-      <hr class="my-5">
-
-      <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
-    </div>
-
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="assets/js/starter.js"></script>
+    </section>
+    <!-- Clients-->
+    <!-- Signup-->
+    <section class="signup-section" id="contactus">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+          <div class="col-md-10 col-lg-8 mx-auto text-center">
+            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+            <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form
+              class="form-signup"
+              id="contactForm"
+              data-sb-form-api-token="API_TOKEN"
+            >
+              <!-- Email address input-->
+              <div class="row input-group-newsletter">
+                <div class="col">
+                  <input
+                    class="form-control"
+                    id="emailAddress"
+                    type="email"
+                    placeholder="Enter email address..."
+                    aria-label="Enter email address..."
+                    data-sb-validations="required,email"
+                  />
+                </div>
+                <div class="col-auto">
+                  <button
+                    class="btn btn-primary disabled"
+                    id="submitButton"
+                    type="submit"
+                  >
+                    Notify Me!
+                  </button>
+                </div>
+              </div>
+              <div
+                class="invalid-feedback mt-2"
+                data-sb-feedback="emailAddress:required"
+              >
+                An email is required.
+              </div>
+              <div
+                class="invalid-feedback mt-2"
+                data-sb-feedback="emailAddress:email"
+              >
+                Email is not valid.
+              </div>
+              <!-- Submit success message-->
+              <!---->
+              <!-- This is what your users will see when the form-->
+              <!-- has successfully submitted-->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3 mt-2 text-white">
+                  <div
+                    class="fw-bolder"
+                    href="https://startbootstrap.com/solution/contact-forms"
+                  >
+                    Form submission successful!
+                  </div>
+                </div>
+              </div>
+              <!-- Submit error message-->
+              <!---->
+              <!-- This is what your users will see when there is-->
+              <!-- an error submitting the form-->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3 mt-2">
+                  Error sending message!
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Address</h4>
+                <hr class="my-4 mx-auto" />
+                <div class="small text-black-50">
+                  Bojongsari, Kota Depok 16517<br />Jawa Barat - Indonesia
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4 mx-auto" />
+                <div class="small text-black-50">
+                  <a href="#!">info@inagarakaryamandiri.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Phone</h4>
+                <hr class="my-4 mx-auto" />
+                <div class="small text-black-50">(+62)882-1971-9359</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social d-flex justify-content-center">
+          <a class="mx-2" href="https://linkedin.com/inagara"><i class="fab fa-linkedin"></i></a>
+          <a class="mx-2" href="https://facebook.com/inagara"><i class="fab fa-facebook-f"></i></a>
+          <a class="mx-2" href="https://instagram.com/inagara"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+      <div class="container px-4 px-lg-5">
+        Copyright &copy;
+        <a href="https://inagarakaryamandiri.com/">Inagara Karya Mandiri</a>
+        2023
+      </div>
+    </footer>
+    <a
+      href="https://api.whatsapp.com/send?phone=6288219719359&text=Hello%21%20."
+      class="floating"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp float-button"></i>
+    </a>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
   </body>
 </html>
